@@ -32,7 +32,7 @@
             bottom: 0;
             left: 0;
             right: 0;
-            height: 80px;
+            height: 50px;
             background: white;
             border-top: 1px solid #e2e8f0;
             display: flex;
@@ -53,8 +53,7 @@
         }
         .tab-item.active { color: #E63946; }
         .tab-item i { font-size: 20px; margin-bottom: 4px; }
-        .content { padding-bottom: 90px; }
-        .header { padding-top: 12px; padding-bottom: 12px; }
+        .content { padding-bottom: 60px; }
         .status-normal { background-color: #2A9D8F; }
         .status-warning { background-color: #E9C46A; }
         .status-danger { background-color: #E76F51; }
@@ -149,7 +148,7 @@
 <body class="bg-gray-50">
     <div id="app">
         <!-- Header -->
-        <div class="bg-gradient-to-b from-primary to-primary/80 text-white px-6 pt-6 pb-4">
+        <div class="bg-gradient-to-b from-primary to-primary/80 text-white px-6 pt-4 pb-3">
             <div class="flex items-center justify-between mb-4">
                 <h1 class="text-2xl font-bold">血压管家</h1>
                 <button @click="currentScreen = 'profile'" class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
@@ -162,7 +161,7 @@
         <!-- Content -->
         <div class="content px-4">
             <!-- Home Screen -->
-            <div v-if="currentScreen === 'home'" class="mt-4">
+            <div v-if="currentScreen === 'home'" class="mt-2">
                 <!-- Quick Stats -->
                 <div class="bg-white rounded-2xl shadow-lg p-5 mb-6">
                     <div class="text-center mb-3">
